@@ -1,0 +1,66 @@
+package servletdemo.part03;
+
+public class MemDTO {
+	private int num;
+	private String name;
+	private int age;
+	private String loc;
+
+	public MemDTO() {
+
+	}
+
+	public MemDTO(String name, int age, String loc) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.loc = loc;
+	}
+
+	public MemDTO(int num, String name, int age, String loc) {
+		super();
+		this.num = num;
+		this.name = name;
+		this.age = age;
+		this.loc = loc;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String getLoc() {
+		return loc;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public void setLoc(String loc) {
+		this.loc = loc;
+	}
+
+	@Override
+	public String toString() {
+
+		return String.format("%d %s %d %s", num, name, age, loc);
+	}
+
+}// end class
